@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variabel</title>
+</head>
+
+<body>
+  <h2>Java Script Variabel</h2>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <script>
+    x = 5;/* Deklarasi dengan automatically*/
+    y = 6;
+    z = x + y;
+    document.getElementById("demo").innerHTML = "Hasilnya adalah" + " " + z;
+
+    var x = 2;/* Deklarasi menggunakan var*/
+    var y = 6;
+    var z = x + y;
+    document.getElementById("demo2").innerHTML = "Hasilnya adalah" + " " + z;
+
+    const price1 = 4;/* Deklarasi menggunakan const dan let*/
+    const price2 = 6;
+    let total = price1 - price2;
+    document.getElementById("demo3").innerHTML = "Hasilnya adalah" + " " + total;
+const umur=25;
+let nama="Mawar";
+let answer='Yes, I am';
+document.getElementById("demo4").innerHTML=umur+"<br>"+nama+"<br>"+answer;
+
+let carName="Lulu";
+document.getElementById("demo5").innerHTML=carName;
+  </script>
+</body>
+
+</html>

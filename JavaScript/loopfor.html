@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop For</title>
+</head>
+<body>
+  <center><h2>Loop pada JavaScript</h2></center>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+
+
+  <script>
+    let text=" ";
+    for(let i=0; i<5 ; i++){
+      text+="Text number is" + " "+i+"<br>"
+    }
+    document.getElementById("demo").innerHTML=text;
+
+    let number=" ";
+    for( let i=10; i>=0;i--){
+      number += i+"<br>"
+    }
+    document.getElementById("demo1").innerHTML=number;
+
+    const cars = ["lulu", "lili", "ayu", "vina"];
+      let i, len, greeting;
+      for (i = 0, len = cars.length, greeting = ""; i < len; i++) {
+        greeting += cars[i] + "<br>";
+      }
+      document.getElementById("demo2").innerHTML = greeting;
+  </script>
+</body>
+</html>

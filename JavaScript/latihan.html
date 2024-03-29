@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan UAS 1</title>
+    <style>
+        #mahasiswa {
+            border-collapse: collapse;
+            width: 30%;
+            border-color: blue;
+
+        }
+
+        #mahasiswa td,
+        #mahasiswa th {
+            border-collapse: 1px;
+            width: 50%;
+            text-align: center;
+        }
+
+        #mahasiswa tr:nth-child(even) {
+            background-color: white;
+            text-align: center;
+        }
+
+        #mahasiswa tr:hover {
+            background-color: aqua;
+        }
+
+        #mahasiswa th {
+            padding-top: 10px;
+            padding-bottom: 7px;
+            text-align: center;
+            background-color: rgb(58, 197, 240);
+            color: azure;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Latihan Evaluasi Pemrograman Web 1</h1>
+    <p>Contoh List Kendaraan</p>
+    <ol>
+        <li>Mobil</li>
+        <ul>
+            <li>BMW</li>
+            <li>Rubicon</li>
+            <li>Civic</li>
+
+        </ul>
+        <li>Motor</li>
+        <ul>
+            <li>Yamaha</li>
+            <li>Honda</li>
+            <li>Suzuki</li>
+
+        </ul>
+
+    </ol>
+    <table border="1" style="width : 80%">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+
+        <tr>
+            <td id="a">1</td>
+            <td id="b">2</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table><br>
+    <table border="1" id="mahasiswa">
+        <p><strong><sub><i>Tabel</sub> data diri </i><sup>mahasiswa</sup></strong></p>
+        <tr>
+            <th colspan="2">Nama Mahasiswa</th>
+
+        </tr>
+        <tr>
+            <th>Nama</th>
+            <th>No.Tlp</th>
+        </tr>
+        <tr>
+            <td>Lulu</td>
+            <td>0890999909</td>
+        </tr>
+        <tr>
+            <td>mark</td>
+            <td>0826257666</td>
+        </tr>
+        <tr>
+            <td rowspan="2">jujun</td>
+            <td>0976543345</td>
+        </tr>
+        <tr>
+            <td>0987625244</td>
+        </tr>
+        <tr>
+            <td rowspan="2">yuni</td>
+            <td><img src=https://imgupscaler.com/images/samples/animal-before.webp width="100" height="90">
+        </tr>
+        <tr>
+            <td>098765000</td>
+        </tr>
+    </table><br>
+    <script>
+        let a = document.getElementById("a").innerHTML;
+        let b = document.getElementById("b").innerHTML;
+
+        document.write("nilai a adalah =" + a + "<br>");
+        document.write("nilai b adalah =" + b + "<br>");
+
+        function myFunction(a, b) {
+            return a + b;
+        }
+        let result = myFunction(1, 2);
+
+        function hasil() {
+            alert("hasil a + b =" + result)
+        }
+    </script>
+    <button type="button" onclick="hasil()">Klik</button>
+</body>
+
+</html>

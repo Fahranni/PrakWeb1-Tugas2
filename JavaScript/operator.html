@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+
+  <script>
+    let x = 7;
+    let y = 9;
+    let z = x + y; //Operator Penjumlahan
+    document.getElementById("demo").innerHTML = "Tampilkan hasil x + y adalah" + " " + z;
+
+    let a = 7;
+    let b = 9;
+    let c = a * b; //Operator Perkalian
+    document.getElementById("demo1").innerHTML = "Tampilkan hasil a x b adalah" + " " + c;
+
+ let number1=7;
+ let number2=3;
+ let result=number1>number2; //Operator pembanding
+ document.getElementById("demo2").innerHTML="Apakah 7 lebih dari 3?"+ result;
+
+ let text1="Halo ";
+ text1 +="Selamat Pagi";//Menggabungkan
+ document.getElementById("demo3").innerHTML= text1;
+
+ let g=4
+ let j=9;
+ let i=4;
+ document.getElementById("demo4").innerHTML= (g == j) + "<br>" +(g==i);//boolean untuk pengujian bersyarat
+   
+  </script>
+</body>
+
+</html>

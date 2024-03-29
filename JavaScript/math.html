@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math</title>
+</head>
+
+<body>
+  <h2>Math Menggunakan JavaScript</h2>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <p id="demo8"></p>
+  <p id="demo9"></p>
+  <p id="demo10"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+
+
+  <script>
+    document.getElementById("demo").innerHTML = Math.round(0.2);
+    document.getElementById('demo1').innerHTML = Math.ceil(0.2);
+    document.getElementById("demo2").innerHTML = Math.floor(0.2);//mengembalikan nilai yang dibulatkan ke bawah
+    document.getElementById("demo3").innerHTML = Math.trunc(0.2);//mengembalikan bagian integer
+    document.getElementById("demo4").innerHTML = Math.sign(9);//mengengbalikan nilai menjadi 0 atau -1 atau 1
+    document.getElementById("demo5").innerHTML = Math.pow(2, 2);//menjadikan pangkat
+    document.getElementById("demo6").innerHTML = Math.sqrt(4);//mengembalikan akar kuadrat
+    document.getElementById("demo7").innerHTML = Math.abs(-4);//mengembalikan nilai menjadi positif
+    document.getElementById("demo8").innerHTML = Math.sin(90 * Math.PI/180);//mengembalikan sinus
+    document.getElementById("demo9").innerHTML = Math.cos(0* Math.PI/180);//mengembalikan nilai cosinus
+    document.getElementById("demo10").innerHTML = Math.min(-4,10,8,2,-1,0);//menemukan nilai terendah
+    document.getElementById("demo12").innerHTML = Math.max(-4, 10, 8, 2, -1, 0);//menemukan nilai tertinggi
+    document.getElementById("demo13").innerHTML=Math.log2(8);
+  </script>
+
+</body>
+
+</html>

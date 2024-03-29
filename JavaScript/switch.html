@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch</title>
+</head>
+
+<body>
+  <h2>Switch dengan JavaScript</h2>
+  <p id="demo"></p>
+  <script>
+    let day;
+    switch (new Date().getDay()) {// Switch digunakan untuk memilih salah satu dari banyak kondisi yang berbeda
+      case 0:
+        day = "minggu";
+        break;
+      case 1:
+        day = "senin";
+        break;
+      case 2:
+        day = "selas";
+        break;
+      case 3:
+        day = "rabu";
+        break;
+      case 4:
+        day = "kamis";
+        break;
+      case 5:
+        day = "jum'at";
+        break;
+      case 6:
+        day = "sabtu";
+
+    }
+    document.getElementById("demo").innerHTML = "Hari ini adalah hari " + day;
+
+  </script>
+</body>
+
+</html>
